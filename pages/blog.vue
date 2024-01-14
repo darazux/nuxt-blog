@@ -10,6 +10,7 @@
           <h3>{{ singleData.title }}</h3>
           <p>{{ singleData.excerpt }}</p>
           <p>{{ singleData.date }}</p>
+          <NuxtLink :to="singleData._path">Read More</NuxtLink>
         </div>
         <div>
           <nuxt-img :src="singleData.image" alt="blog-image" format="webp" />
@@ -21,7 +22,7 @@
 
 <script setup>
 const { data } = await useAsyncData('blogQuery', () =>
-  queryContent('/blog').find(),
+  queryContent('/blog').sort({ id: -1 }).find(),
 );
 </script>
 <style></style>

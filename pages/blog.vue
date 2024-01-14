@@ -1,9 +1,19 @@
 <!-- blog.vue -->
 
 <template>
-  <h1>ブログページ</h1>
-  <p>hello</p>
+  <div>
+    <div v-for="singleData in data" :key="singleData.id">
+      {{ singleData.title }}
+      <br />
+      {{ singleData.date }}
+      <hr />
+    </div>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useAsyncData('blogQuery', () =>
+  queryContent('/blog').find(),
+);
+</script>
 <style></style>

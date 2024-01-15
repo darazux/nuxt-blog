@@ -45,3 +45,10 @@
     </div>
   </div>
 </template>
+
+<script setup>
+useHead({
+  title: 'darazux officeial site.',
+  meta: [{ name: 'description', content: 'darazuxのポートフォリオサイトです' }],
+});
+</script>

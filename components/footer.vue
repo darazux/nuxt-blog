@@ -2,7 +2,7 @@
 
 <template>
   <footer>
-    <div>
+    <div class="insideContainer">
       <a href="https://www.google.com/"
         ><img src="/images/github.svg" alt="logo"
       /></a>

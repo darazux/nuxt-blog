@@ -1,8 +1,8 @@
 <!-- contact.vue -->
 
 <template>
-  <div>
-    <div>
+  <div class="wrapper">
+    <div class="container">
       <h1>Contact</h1>
       <p>お気軽にご連絡ください</p>
       <form method="POST">

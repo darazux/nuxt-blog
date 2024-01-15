@@ -2,24 +2,24 @@
 
 <template>
   <div>
-    <div>
+    <div class="hero">
       <nuxt-img src="/images/index-hero.jpg" alt="hero" format="webp" />
-      <div>
+      <div class="textContainer">
         <h1>I'm darazux</h1>
         <h3>JavaScript Developer</h3>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="container">
+      <div class="profile">
         <div>
           <h2>JavaScript Nerd</h2>
           <p></p>
         </div>
         <nuxt-img src="/images/profile.jpg" alt="profile" format="webp" />
       </div>
-      <div>
+      <div class="skills">
         <h2>Skills</h2>
-        <div>
+        <div class="skillsContainer">
           <div>
             <img src="/images/javascript.svg" alt="javascript" /><span
               >JavaScript / 3 years</span
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="ctaButton">
         <NuxtLink to="/contact">Make It Happen!</NuxtLink>
       </div>
     </div>

@@ -3,11 +3,11 @@
 <template>
   <h1>記事ページ</h1>
   <div>
-    <div>
+    <div class="hero">
       <nuxt-img :src="data.image" alt="blog-image" format="webp" />
     </div>
-    <div>
-      <div>
+    <div class="wrapper">
+      <div class="container">
         <h1>{{ data.title }}</h1>
         <p>{{ data.date }}</p>
         <ContentDoc />

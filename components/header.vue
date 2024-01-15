@@ -2,10 +2,10 @@
 
 <template>
   <header>
-    <div>
-      <div>
+    <div class="container">
+      <div class="flexContainer">
         <NuxtLink to="/">
-          <nuxt-img src="/images/log.png" alt="logo" format="webp" />
+          <nuxt-img src="/images/logo.png" alt="logo" format="webp" />
         </NuxtLink>
         <ul>
           <li><NuxtLink to="/blog">Blog</NuxtLink></li>

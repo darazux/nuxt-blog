@@ -1,4 +1,4 @@
-<!-- blog.vue -->
+<!-- blog/index.vue -->
 
 <template>
   <div>
@@ -25,4 +25,3 @@ const { data } = await useAsyncData('blogQuery', () =>
   queryContent('/blog').sort({ id: -1 }).find(),
 );
 </script>
-<style></style>
